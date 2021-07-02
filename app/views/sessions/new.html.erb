@@ -1,0 +1,12 @@
+<div id="container">
+    <h1>Welcome to Dojo Secrets</h1>
+    <h3>Please Login</h3>
+    <form class="row mb-3" action="/sessions" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <div class="col-auto">
+            <input type="text" name="user[email]" id="Email" placeholder="email">
+            <input type="password" name="user[password]" id="Password" placeholder="password">
+            <input type="submit" value="Log In">
+        </div>
+    </form>
+</div>
